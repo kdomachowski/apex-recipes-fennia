@@ -1,0 +1,117 @@
+# AccountRepo Class
+
+## Fields
+### `instance`
+
+#### Signature
+```apex
+private static instance
+```
+
+#### Type
+[AccountRepo](AccountRepo.md)
+
+## Methods
+### `getInstance()`
+
+Implements the signleton pattern
+
+#### Signature
+```apex
+public static AccountRepo getInstance()
+```
+
+#### Return Type
+**[AccountRepo](AccountRepo.md)**
+
+---
+
+### `queryAccountsWithBinds(queryString, bindVariablesMap, accessLevel)`
+
+Returns the all records returned from the query.
+
+#### Signature
+```apex
+public List<Account> queryAccountsWithBinds(String queryString, Map<String,Object> bindVariablesMap, System.AccessLevel accessLevel)
+```
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| queryString | String |  |
+| bindVariablesMap | Map&lt;String,Object&gt; |  |
+| accessLevel | System.AccessLevel |  |
+
+#### Return Type
+**List&lt;Account&gt;**
+
+---
+
+### `insertDBObject(account)`
+
+#### Signature
+```apex
+public void insertDBObject(Account account)
+```
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| account | Account |  |
+
+#### Return Type
+**void**
+
+---
+
+### `insertDBObjects(accounts)`
+
+#### Signature
+```apex
+public void insertDBObjects(List<Account> accounts)
+```
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| accounts | List&lt;Account&gt; |  |
+
+#### Return Type
+**void**
+
+---
+
+### `updateDBObject(account)`
+
+#### Signature
+```apex
+public void updateDBObject(Account account)
+```
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| account | Account |  |
+
+#### Return Type
+**void**
+
+---
+
+### `updateDBObjects(accounts)`
+
+#### Signature
+```apex
+public void updateDBObjects(List<Account> accounts)
+```
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| accounts | List&lt;Account&gt; |  |
+
+#### Return Type
+**void**
+
+## Classes
+### AccountRepoException Class
