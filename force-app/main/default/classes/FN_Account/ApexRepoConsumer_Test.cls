@@ -35,5 +35,9 @@ public with sharing class ApexRepoConsumer_Test {
         Test.stopTest();
         System.debug('Account Name: ' + name);
         System.Assert.isTrue(name != null, 'Name should not be null');
+        System.Assert.isTrue(
+            queryAccountsWithBindsTrack.hasBeenCalledXTimes > 0,
+            'queryAccountsWithBinds should have been called once'
+        );
     }
 }
