@@ -101,6 +101,30 @@ private static void testUpdateBatchPositive()
 
 ---
 
+### `testDeleteSinglePositive()`
+
+#### Signature
+```apex
+private static void testDeleteSinglePositive()
+```
+
+#### Return Type
+**void**
+
+---
+
+### `testDeleteBatchPositive()`
+
+#### Signature
+```apex
+private static void testDeleteBatchPositive()
+```
+
+#### Return Type
+**void**
+
+---
+
 ### `createAccounts(accountNamePrefix, accountNumberPrefix, totalNumber)`
 
 Helper method to create accounts

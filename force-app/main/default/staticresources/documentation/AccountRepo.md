@@ -113,5 +113,39 @@ public void updateDBObjects(List<Account> accounts)
 #### Return Type
 **void**
 
+---
+
+### `deleteDBObject(account)`
+
+#### Signature
+```apex
+public void deleteDBObject(Account account)
+```
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| account | Account |  |
+
+#### Return Type
+**void**
+
+---
+
+### `deleteDBObjects(accounts)`
+
+#### Signature
+```apex
+public void deleteDBObjects(List<Account> accounts)
+```
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| accounts | List&lt;Account&gt; |  |
+
+#### Return Type
+**void**
+
 ## Classes
 ### AccountRepoException Class

@@ -77,4 +77,25 @@ public with sharing class AccountRepo {
     // methods are not necessary as long as Account deletion doesn't need to be implemented
     // public void deleteDBObject(Account account)
     // public void deleteDBObjects(List<Account> accounts)
+
+    public void deleteDBObject(Account account) {
+        if (
+            account != null &&
+            Schema.sObjectType.Account.isAccessible() &&
+            Schema.sObjectType.Account.isDeletable()
+        ) {
+            delete account;
+        }
+    }
+
+    public void deleteDBObjects(List<Account> accounts) {
+        if (accounts != null && accounts.size() > 0) {
+            if (
+                Schema.sObjectType.Account.isAccessible() &&
+                Schema.sObjectType.Account.isDeletable()
+            ) {
+                delete accounts;
+            }
+        }
+    }
 }
