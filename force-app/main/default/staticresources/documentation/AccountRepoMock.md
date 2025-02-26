@@ -1,4 +1,4 @@
-# AccountRepo Class
+# AccountRepoMock Class
 
 **Implements**
 
@@ -13,7 +13,19 @@ private static instance
 ```
 
 #### Type
-[AccountRepo](AccountRepo.md)
+[AccountRepoMock](AccountRepoMock.md)
+
+---
+
+### `accountMap`
+
+#### Signature
+```apex
+private accountMap
+```
+
+#### Type
+Map&lt;Id,Account&gt;
 
 ## Methods
 ### `getInstance()`
@@ -22,11 +34,11 @@ Implements the signleton pattern
 
 #### Signature
 ```apex
-public static AccountRepo getInstance()
+public static AccountRepoMock getInstance()
 ```
 
 #### Return Type
-**[AccountRepo](AccountRepo.md)**
+**[AccountRepoMock](AccountRepoMock.md)**
 
 ---
 

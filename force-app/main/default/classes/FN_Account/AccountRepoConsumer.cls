@@ -1,7 +1,7 @@
 public with sharing class AccountRepoConsumer {
-    private AccountRepo accountRepo;
+    private AccountRepoInterface accountRepo;
 
-    public AccountRepoConsumer(AccountRepo accountRepo) {
+    public AccountRepoConsumer(AccountRepoInterface accountRepo) {
         if (accountRepo != null) {
             this.accountRepo = accountRepo;
         } else {

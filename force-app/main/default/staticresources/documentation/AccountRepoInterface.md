@@ -1,35 +1,6 @@
-# AccountRepo Class
-
-**Implements**
-
-[AccountRepoInterface](AccountRepoInterface.md)
-
-## Fields
-### `instance`
-
-#### Signature
-```apex
-private static instance
-```
-
-#### Type
-[AccountRepo](AccountRepo.md)
+# AccountRepoInterface Interface
 
 ## Methods
-### `getInstance()`
-
-Implements the signleton pattern
-
-#### Signature
-```apex
-public static AccountRepo getInstance()
-```
-
-#### Return Type
-**[AccountRepo](AccountRepo.md)**
-
----
-
 ### `queryAccountsWithBinds(queryString, bindVariablesMap, accessLevel)`
 
 Returns the all records returned from the query.
@@ -150,6 +121,3 @@ public void deleteDBObjects(List<Account> accounts)
 
 #### Return Type
 **void**
-
-## Classes
-### AccountRepoException Class

@@ -28,3 +28,17 @@ private static void testAccountRepoStubbed()
 
 #### Return Type
 **void**
+
+---
+
+### `testAccountRepoMocked()`
+
+`ISTEST`
+
+#### Signature
+```apex
+private static void testAccountRepoMocked()
+```
+
+#### Return Type
+**void**

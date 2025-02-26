@@ -40,4 +40,23 @@ public with sharing class ApexRepoConsumer_Test {
             'queryAccountsWithBinds should have been called once'
         );
     }
+
+    @isTest
+    static void testAccountRepoMocked() {
+        AccountRepoMock accountRepoMock = new AccountRepoMock();
+        accountRepoMock.insertDBObject(
+            new Account(Name = 'Kay Account', AccountNumber = '1234567890')
+        );
+
+        Test.startTest();
+        AccountRepoConsumer accountRepoConsumer = new AccountRepoConsumer(
+            accountRepoMock
+        );
+        String name = accountRepoConsumer.getAccountNameByAccountNumber(
+            '1234567890'
+        );
+        Test.stopTest();
+        System.debug('Account Name: ' + name);
+        System.Assert.isTrue(name != null, 'Name should not be null');
+    }
 }

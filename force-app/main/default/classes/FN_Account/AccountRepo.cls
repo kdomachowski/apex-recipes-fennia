@@ -1,4 +1,4 @@
-public with sharing class AccountRepo {
+public with sharing class AccountRepo implements AccountRepoInterface {
     static AccountRepo instance;
     public class AccountRepoException extends Exception {
     }

@@ -9,20 +9,20 @@ private accountRepo
 ```
 
 #### Type
-[AccountRepo](AccountRepo.md)
+[AccountRepoInterface](AccountRepoInterface.md)
 
 ## Constructors
 ### `AccountRepoConsumer(accountRepo)`
 
 #### Signature
 ```apex
-public AccountRepoConsumer(AccountRepo accountRepo)
+public AccountRepoConsumer(AccountRepoInterface accountRepo)
 ```
 
 #### Parameters
 | Name | Type | Description |
 |------|------|-------------|
-| accountRepo | [AccountRepo](AccountRepo.md) |  |
+| accountRepo | [AccountRepoInterface](AccountRepoInterface.md) |  |
 
 ## Methods
 ### `getAccountNameByAccountNumber(accountNumber)`
