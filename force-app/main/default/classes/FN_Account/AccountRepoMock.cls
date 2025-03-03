@@ -1,3 +1,4 @@
+@IsTest
 public with sharing class AccountRepoMock implements AccountRepoInterface {
     static AccountRepoMock instance;
 
